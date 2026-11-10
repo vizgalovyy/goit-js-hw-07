@@ -28,15 +28,19 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
+const fragment = document.createDocumentFragment();
 
 for (const image of images) {
   const item = document.createElement('li');
   item.classList.add('gallery-item');
+
   const img = document.createElement('img');
   img.className = 'gallery-image';
   img.src = image.url;
   img.alt = image.alt;
 
-  gallery.append(item);
   item.append(img);
+  fragment.append(item);
 }
+
+gallery.append(fragment);
