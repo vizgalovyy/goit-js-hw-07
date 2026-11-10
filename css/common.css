@@ -213,3 +213,20 @@ h1 {
 .login-form-btn:focus {
   background-color: #6c8cff;
 }
+
+.widget {
+  margin: 100px 88px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 169px;
+  height: 80px;
+}
+
+.login-form-btn.rhc {
+  width: 148px;
+}
