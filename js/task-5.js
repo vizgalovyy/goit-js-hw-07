@@ -8,7 +8,6 @@ function getRandomHexColor() {
 
 const body = document.querySelector('body');
 const btn = document.querySelector('button');
-btn.className = 'login-form-btn rhc';
 const span = document.querySelector('.color');
 let color;
 const handleClick = () => {
